@@ -397,8 +397,11 @@ const STORAGE_KEY = 'model-editor-current';
 
 ### 12.1 Story 驱动开发
 - 每个开发任务必须对应 `stories.csv` 中的一个 User Story
-- 开发前确认 Story 状态，从 Backlog 中按优先级选取，并更新被选取的 Story 状态 -> InDev
-- 完成后更新 Story 状态 → Done
+- Developer 开发前确认 Story 状态，从 Backlog 中按优先级选取，并更新被选取的 Story 状态 -> InDev
+- Developer完成后更新 Story 状态 → InTest
+- QA 测试状态为 InTest 的Story
+  - 测试如果没有问题，Story 状态更新为 Done
+  - 测试如果发现问题，Story 状态更新为 InFix，并转交给 Developer 进行修复
 
 ### 12.2 提交规范
 - 遵循 Conventional Commits 格式
