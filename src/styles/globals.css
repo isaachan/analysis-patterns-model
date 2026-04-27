@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+:root {
+  /* Layout */
+  --toolbar-height: 48px;
+  --sidebar-width: 56px;
+  --right-sidebar-width: 280px;
+  --statusbar-height: 28px;
+
+  /* Colors */
+  --color-bg-primary: #f5f5f7;
+  --color-bg-secondary: #ffffff;
+  --color-bg-canvas: #e8e8ed;
+  --color-bg-toolbar: rgba(255, 255, 255, 0.85);
+  --color-bg-sidebar: #ffffff;
+
+  --color-border-primary: #d2d2d7;
+  --color-border-secondary: #e5e5ea;
+
+  --color-text-primary: #1d1d1f;
+  --color-text-secondary: #86868b;
+  --color-text-tertiary: #aeaeb2;
+
+  --color-accent: #007aff;
+  --color-accent-hover: #0066d6;
+  --color-accent-active: #0055b3;
+
+  --color-selection: #007aff;
+  --color-hover: rgba(0, 122, 255, 0.1);
+  --color-danger: #ff3b30;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
